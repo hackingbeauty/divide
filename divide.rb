@@ -14,11 +14,9 @@ class Divide
       val = val - y
       count += 1
       if(val < y)
-        valType = false
         puts "Quotient: #{count}, Remainder: #{val}"
         return
       elsif(val == 0)
-        valType = false
         puts "Quotient: #{count}, Remainder: 0"
         return
       end
