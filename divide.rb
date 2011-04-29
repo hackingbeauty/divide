@@ -1,6 +1,9 @@
 class Divide
 	def initialize(x,y)
-	  if y == 0 || x == 0
+	  if y == 0 
+	    puts "Undefined"
+	    return
+	  elsif x == 0  
 	    puts "Error"
 	    return
 	  end
@@ -8,6 +11,10 @@ class Divide
 	end
 
 	def divide(x,y)
+    if(x < y)
+      puts "Quotient: 0, Remainder: #{x}"
+      return
+    end
     val = x;
     count = 0;
     while true do
